@@ -1,0 +1,9 @@
+# Copyright (c) 2022 tangchunhui@coros.com
+# SPDX-License-Identifier: Apache-2.0
+
+source "Kconfig.zephyr"
+
+config FS_DEVFS_BLKDEV_FLASH
+	bool "Change zephyr flash device to devfs block device"
+	depends on FS_DEVFS_BLKDEV && FLASH
+	default n

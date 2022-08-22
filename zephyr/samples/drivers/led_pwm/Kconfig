@@ -1,0 +1,9 @@
+# Copyright (c) 2022 tangchunhui@coros.com
+# SPDX-License-Identifier: Apache-2.0
+
+source "Kconfig.zephyr"
+
+config FS_DEVFS_CHDEV_LED
+	bool "Change zephyr led device to devfs character device"
+	depends on FS_DEVFS_CHDEV && LED
+	default n

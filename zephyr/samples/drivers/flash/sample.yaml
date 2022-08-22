@@ -1,0 +1,7 @@
+sample:
+  description: Demonstration of the FLASH device
+  name: Flash
+tests:
+  sample.drivers.flash:
+    tags: flash
+    filter: CONFIG_FLASH_HAS_DRIVER_ENABLED

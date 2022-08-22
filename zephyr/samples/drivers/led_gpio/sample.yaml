@@ -1,0 +1,8 @@
+sample:
+  description: Demonstration of the GPIO LED device
+  name: GPIO LED sample
+tests:
+  sample.drivers.led.led_gpio:
+    filter: dt_compat_enabled("gpio-leds")
+    tags: LED
+    depends_on: gpio
